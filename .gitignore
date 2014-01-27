@@ -26,3 +26,6 @@
 /Koleso.Database/RavenDB/Server/Database
 
 /Koleso.Database/*.user
+
+/Koleso.Database/RavenDB/Server/InstallUtil.InstallLog
+/Koleso.Database/RavenDB/Server/Raven.Server.InstallLog
