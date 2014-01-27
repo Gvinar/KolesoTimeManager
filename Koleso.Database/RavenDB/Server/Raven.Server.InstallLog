@@ -55,3 +55,25 @@ Affected parameters are:
    logtoconsole = 
    assemblypath = D:\MyProjects\KolesoTimeManager\RavenDB\Server\Raven.Server.exe
    logfile = D:\MyProjects\KolesoTimeManager\RavenDB\Server\Raven.Server.InstallLog
+Uninstalling assembly 'D:\MyProjects\KolesoTimeManager\RavenDB\Server\Raven.Server.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\MyProjects\KolesoTimeManager\RavenDB\Server\Raven.Server.exe
+   logfile = D:\MyProjects\KolesoTimeManager\RavenDB\Server\Raven.Server.InstallLog
+Removing EventLog source RavenDB.
+Service RavenDB is being removed from the system...
+Service RavenDB was successfully removed from the system.
+Attempt to stop service RavenDB.
+Installing assembly 'D:\MyProjects\KolesoTimeManager\Koleso.Database\RavenDB\Server\Raven.Server.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\MyProjects\KolesoTimeManager\Koleso.Database\RavenDB\Server\Raven.Server.exe
+   logfile = D:\MyProjects\KolesoTimeManager\Koleso.Database\RavenDB\Server\Raven.Server.InstallLog
+Installing service RavenDB...
+Service RavenDB has been successfully installed.
+Creating EventLog source RavenDB in log Application...
+Committing assembly 'D:\MyProjects\KolesoTimeManager\Koleso.Database\RavenDB\Server\Raven.Server.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\MyProjects\KolesoTimeManager\Koleso.Database\RavenDB\Server\Raven.Server.exe
+   logfile = D:\MyProjects\KolesoTimeManager\Koleso.Database\RavenDB\Server\Raven.Server.InstallLog
