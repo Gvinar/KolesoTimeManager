@@ -1,0 +1,50 @@
+﻿<Window x:Class="Koleso.DesktopTimeManager.Views.MainWindow.MainWindowView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Koleso.DesktopTimeManager"
+        Title="Time Manager"
+        SizeToContent="WidthAndHeight"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize"
+        Icon="/Koleso.DesktopTimeManager;component/Resourses/Images/MainLogoIcon.png"
+        Background="#FFDBD8D8" FontFamily="Calibri" FontSize="14">
+    <Window.Resources>
+        
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Column="1" Grid.Row="1">
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Online" Height="25" Width="50" HorizontalAlignment="Left" />
+                <Label Content="{Binding Path=TotalVisitsOnline}" Height="25" Width="50" HorizontalAlignment="Right" />
+            </StackPanel>
+            <DataGrid Height="300" Margin="0,5,0,0" ItemsSource="{Binding Path=VisitOnlineList}" AutoGenerateColumns="False" RowHeaderWidth="0" IsReadOnly="True" EnableRowVirtualization="False" CanUserSortColumns="False" CanUserResizeRows="False" VerticalScrollBarVisibility="Visible" HorizontalAlignment="Center">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="EntranceTime" MinWidth="150" Binding="{Binding Path=EntranceTime}" />
+                    <DataGridTextColumn Header="SpentTime, min" MinWidth="110" Binding="{Binding Path=SpentTime}" />
+                    <DataGridTextColumn Header="Price, rur" MinWidth="70" Binding="{Binding Path=Price}" />
+                    <DataGridTextColumn Header="CardId" MinWidth="400" Binding="{Binding Path=CardId}" />
+                </DataGrid.Columns>
+            </DataGrid>
+            <Label Content="Visit History, Last 40" Margin="0,10,0,0" Height="25" Width="130" HorizontalAlignment="Left" />
+            <DataGrid Height="300" Margin="0,5,0,0" ItemsSource="{Binding Path=VisitHistoryList}" AutoGenerateColumns="False" RowHeaderWidth="0" IsReadOnly="True" EnableRowVirtualization="False" CanUserSortColumns="False" VerticalScrollBarVisibility="Visible" HorizontalAlignment="Center">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Entrance Time" MinWidth="150" Binding="{Binding Path=EntranceTime}" />
+                    <DataGridTextColumn Header="Exit Time" MinWidth="150" Binding="{Binding Path=ExitTime}" />
+                    <DataGridTextColumn Header="Spent Time, min" MinWidth="110" Binding="{Binding Path=SpentTime}" />
+                    <DataGridTextColumn Header="Price, rur" MinWidth="70" Binding="{Binding Path=Price}" />
+                    <DataGridTextColumn Header="CardId" MinWidth="250" Binding="{Binding Path=CardId}" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -30,6 +30,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\packages\AutoMapper.3.1.1\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper.Net4">
+      <HintPath>..\packages\AutoMapper.3.1.1\lib\net40\AutoMapper.Net4.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -39,16 +45,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MapperConfig\MapperConfig.cs" />
     <Compile Include="MappingService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TimePriceRule\TimePriceRuleService.cs" />
-    <Compile Include="Visit\VisitService.cs" />
+    <Compile Include="Services\TimePriceRule\TimePriceRuleService.cs" />
+    <Compile Include="Services\Visit\VisitService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Koleso.Core\Koleso.Core.csproj">
       <Project>{23623715-BDEE-4B57-A110-522D07E1A150}</Project>
       <Name>Koleso.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Koleso.Persistence\Koleso.Persistence.csproj">
+      <Project>{D26C914E-6B27-4A52-A377-C9FB9423A160}</Project>
+      <Name>Koleso.Persistence</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\packages\AutoMapper.3.1.1\lib\net40\AutoMapper.Net4.dll">
+      <Link>AutoMapper.Net4.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
