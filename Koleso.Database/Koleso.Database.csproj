@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Raven.Client.Lightweight, Version=2.5.0.0, Culture=neutral, PublicKeyToken=37f41c7f99471593, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>RavenDB\Client\Raven.Client.Lightweight.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -39,9 +43,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DocumentStoreConnection.cs" />
+    <Compile Include="Exceptions\ConnectionStringNameException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="RavenDB\Client\Microsoft.CompilerServices.AsyncTargetingPack.Net4.dll" />
+    <Content Include="RavenDB\Client\Microsoft.CompilerServices.AsyncTargetingPack.Net4.xml" />
+    <Content Include="RavenDB\Client\NLog.dll" />
+    <Content Include="RavenDB\Client\NLog.xml" />
+    <Content Include="RavenDB\Client\Raven.Abstractions.dll" />
+    <Content Include="RavenDB\Client\Raven.Abstractions.pdb" />
+    <Content Include="RavenDB\Client\Raven.Abstractions.xml" />
+    <Content Include="RavenDB\Client\Raven.Client.Lightweight.dll" />
+    <Content Include="RavenDB\Client\Raven.Client.Lightweight.pdb" />
+    <Content Include="RavenDB\Client\Raven.Client.Lightweight.XML" />
+    <Content Include="RavenDB\Client\Raven.Client.MvcIntegration.dll" />
+    <Content Include="RavenDB\Client\Raven.Client.MvcIntegration.pdb" />
     <Content Include="RavenDB\Server\AWS.Extensions.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Raven.Client.Lightweight">
+      <HintPath>..\Koleso.Database\RavenDB\Client\Raven.Client.Lightweight.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +49,12 @@
     <Compile Include="Repositories\TimePriceRule\TimePriceRuleRepository.cs" />
     <Compile Include="Repositories\Visit\IVisitRepository.cs" />
     <Compile Include="Repositories\Visit\VisitRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Koleso.Database\Koleso.Database.csproj">
+      <Project>{DFA2BE85-0828-4A53-B440-09E89F4F275E}</Project>
+      <Name>Koleso.Database</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -29,3 +29,5 @@
 
 /Koleso.Database/RavenDB/Server/InstallUtil.InstallLog
 /Koleso.Database/RavenDB/Server/Raven.Server.InstallLog
+/Koleso.DesktopTimeManager/bin
+/Koleso.DesktopTimeManager/obj

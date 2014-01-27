@@ -19,64 +19,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Koleso.Core", "Koleso.Core\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{24B320E3-A062-4CDD-A58C-0A3362BFB023}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RavenDB", "RavenDB", "{1FCF649C-EE50-469D-8AEF-00538369127E}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{3D82CAF8-A38F-4C38-8F42-5825411E9D4D}"
-	ProjectSection(SolutionItems) = preProject
-		RavenDB\Server\AWS.Extensions.dll = RavenDB\Server\AWS.Extensions.dll
-		RavenDB\Server\AWS.Extensions.xml = RavenDB\Server\AWS.Extensions.xml
-		RavenDB\Server\AWSSDK.dll = RavenDB\Server\AWSSDK.dll
-		RavenDB\Server\AWSSDK.xml = RavenDB\Server\AWSSDK.xml
-		RavenDB\Server\Esent.Interop.dll = RavenDB\Server\Esent.Interop.dll
-		RavenDB\Server\Esent.Interop.pdb = RavenDB\Server\Esent.Interop.pdb
-		RavenDB\Server\Esent.Interop.xml = RavenDB\Server\Esent.Interop.xml
-		RavenDB\Server\GeoAPI.dll = RavenDB\Server\GeoAPI.dll
-		RavenDB\Server\ICSharpCode.NRefactory.CSharp.dll = RavenDB\Server\ICSharpCode.NRefactory.CSharp.dll
-		RavenDB\Server\ICSharpCode.NRefactory.CSharp.xml = RavenDB\Server\ICSharpCode.NRefactory.CSharp.xml
-		RavenDB\Server\ICSharpCode.NRefactory.dll = RavenDB\Server\ICSharpCode.NRefactory.dll
-		RavenDB\Server\ICSharpCode.NRefactory.xml = RavenDB\Server\ICSharpCode.NRefactory.xml
-		RavenDB\Server\InstallUtil.InstallLog = RavenDB\Server\InstallUtil.InstallLog
-		RavenDB\Server\Jint.Raven.dll = RavenDB\Server\Jint.Raven.dll
-		RavenDB\Server\Jint.Raven.pdb = RavenDB\Server\Jint.Raven.pdb
-		RavenDB\Server\local.config = RavenDB\Server\local.config
-		RavenDB\Server\Lucene.Net.Contrib.Spatial.NTS.dll = RavenDB\Server\Lucene.Net.Contrib.Spatial.NTS.dll
-		RavenDB\Server\Lucene.Net.Contrib.Spatial.NTS.pdb = RavenDB\Server\Lucene.Net.Contrib.Spatial.NTS.pdb
-		RavenDB\Server\Lucene.Net.Contrib.Spatial.NTS.xml = RavenDB\Server\Lucene.Net.Contrib.Spatial.NTS.xml
-		RavenDB\Server\Lucene.Net.dll = RavenDB\Server\Lucene.Net.dll
-		RavenDB\Server\Lucene.Net.pdb = RavenDB\Server\Lucene.Net.pdb
-		RavenDB\Server\Lucene.Net.xml = RavenDB\Server\Lucene.Net.xml
-		RavenDB\Server\Microsoft.CompilerServices.AsyncTargetingPack.Net4.dll = RavenDB\Server\Microsoft.CompilerServices.AsyncTargetingPack.Net4.dll
-		RavenDB\Server\Microsoft.CompilerServices.AsyncTargetingPack.Net4.xml = RavenDB\Server\Microsoft.CompilerServices.AsyncTargetingPack.Net4.xml
-		RavenDB\Server\Microsoft.Data.Edm.dll = RavenDB\Server\Microsoft.Data.Edm.dll
-		RavenDB\Server\Microsoft.Data.Edm.xml = RavenDB\Server\Microsoft.Data.Edm.xml
-		RavenDB\Server\Microsoft.Data.OData.dll = RavenDB\Server\Microsoft.Data.OData.dll
-		RavenDB\Server\Microsoft.Data.OData.xml = RavenDB\Server\Microsoft.Data.OData.xml
-		RavenDB\Server\Microsoft.Web.Infrastructure.dll = RavenDB\Server\Microsoft.Web.Infrastructure.dll
-		RavenDB\Server\Microsoft.WindowsAzure.Storage.dll = RavenDB\Server\Microsoft.WindowsAzure.Storage.dll
-		RavenDB\Server\Microsoft.WindowsAzure.Storage.xml = RavenDB\Server\Microsoft.WindowsAzure.Storage.xml
-		RavenDB\Server\Mono.Cecil.dll = RavenDB\Server\Mono.Cecil.dll
-		RavenDB\Server\NetTopologySuite.dll = RavenDB\Server\NetTopologySuite.dll
-		RavenDB\Server\NLog.dll = RavenDB\Server\NLog.dll
-		RavenDB\Server\NLog.Ignored.config = RavenDB\Server\NLog.Ignored.config
-		RavenDB\Server\NLog.xml = RavenDB\Server\NLog.xml
-		RavenDB\Server\PowerCollections.dll = RavenDB\Server\PowerCollections.dll
-		RavenDB\Server\Raven.Abstractions.dll = RavenDB\Server\Raven.Abstractions.dll
-		RavenDB\Server\Raven.Abstractions.pdb = RavenDB\Server\Raven.Abstractions.pdb
-		RavenDB\Server\Raven.Abstractions.xml = RavenDB\Server\Raven.Abstractions.xml
-		RavenDB\Server\Raven.Database.dll = RavenDB\Server\Raven.Database.dll
-		RavenDB\Server\Raven.Database.pdb = RavenDB\Server\Raven.Database.pdb
-		RavenDB\Server\Raven.Server.exe = RavenDB\Server\Raven.Server.exe
-		RavenDB\Server\Raven.Server.exe.config = RavenDB\Server\Raven.Server.exe.config
-		RavenDB\Server\Raven.Server.InstallLog = RavenDB\Server\Raven.Server.InstallLog
-		RavenDB\Server\Raven.Server.InstallState = RavenDB\Server\Raven.Server.InstallState
-		RavenDB\Server\Raven.Server.pdb = RavenDB\Server\Raven.Server.pdb
-		RavenDB\Server\Raven.Studio.xap = RavenDB\Server\Raven.Studio.xap
-		RavenDB\Server\Spatial4n.Core.NTS.dll = RavenDB\Server\Spatial4n.Core.NTS.dll
-		RavenDB\Server\Spatial4n.Core.NTS.pdb = RavenDB\Server\Spatial4n.Core.NTS.pdb
-		RavenDB\Server\Spatial4n.Core.NTS.xml = RavenDB\Server\Spatial4n.Core.NTS.xml
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Koleso.Database", "Koleso.Database\Koleso.Database.csproj", "{DFA2BE85-0828-4A53-B440-09E89F4F275E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Koleso.DesktopTimeManager", "Koleso.DesktopTimeManager\Koleso.DesktopTimeManager.csproj", "{DB3D391C-7C4C-44B2-8DEE-E45F1A693104}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -104,6 +49,10 @@ Global
 		{DFA2BE85-0828-4A53-B440-09E89F4F275E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFA2BE85-0828-4A53-B440-09E89F4F275E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFA2BE85-0828-4A53-B440-09E89F4F275E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB3D391C-7C4C-44B2-8DEE-E45F1A693104}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB3D391C-7C4C-44B2-8DEE-E45F1A693104}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB3D391C-7C4C-44B2-8DEE-E45F1A693104}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB3D391C-7C4C-44B2-8DEE-E45F1A693104}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -113,7 +62,7 @@ Global
 		{23623715-BDEE-4B57-A110-522D07E1A150} = {4AA00218-E889-4BB1-9565-98E71093B08C}
 		{24B320E3-A062-4CDD-A58C-0A3362BFB023} = {4AA00218-E889-4BB1-9565-98E71093B08C}
 		{DFA2BE85-0828-4A53-B440-09E89F4F275E} = {4AA00218-E889-4BB1-9565-98E71093B08C}
+		{DB3D391C-7C4C-44B2-8DEE-E45F1A693104} = {806977B0-A70A-4AD0-B9F5-8F3B51FC3DD7}
 		{BA367991-9EA0-4FD1-BA80-24E7FEF7C738} = {2B3EA688-8E8B-4E26-8134-ECB171D02624}
-		{3D82CAF8-A38F-4C38-8F42-5825411E9D4D} = {1FCF649C-EE50-469D-8AEF-00538369127E}
 	EndGlobalSection
 EndGlobal
