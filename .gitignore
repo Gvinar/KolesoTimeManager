@@ -17,3 +17,7 @@
 /*.suo
 
 /Koleso.Persistence/*.user
+
+/RavenDB/Server/Database/System
+/packages
+/RavenDB/Server/Database
