@@ -24,3 +24,5 @@
 /Koleso.Database/bin
 /Koleso.Database/obj
 /Koleso.Database/RavenDB/Server/Database
+
+/Koleso.Database/*.user
