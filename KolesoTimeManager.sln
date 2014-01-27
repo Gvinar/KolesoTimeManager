@@ -3,8 +3,52 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLogic", "BusinessLogic", "{74BC071C-B359-49B7-A2B3-D6F53220DB6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{4AA00218-E889-4BB1-9565-98E71093B08C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DesktopUi", "DesktopUi", "{806977B0-A70A-4AD0-B9F5-8F3B51FC3DD7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{2B3EA688-8E8B-4E26-8134-ECB171D02624}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Koleso.Logging", "Koleso.Logging\Koleso.Logging.csproj", "{BA367991-9EA0-4FD1-BA80-24E7FEF7C738}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Koleso.Persistence", "Koleso.Persistence\Koleso.Persistence.csproj", "{D26C914E-6B27-4A52-A377-C9FB9423A160}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Koleso.Core", "Koleso.Core\Koleso.Core.csproj", "{23623715-BDEE-4B57-A110-522D07E1A150}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{24B320E3-A062-4CDD-A58C-0A3362BFB023}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA367991-9EA0-4FD1-BA80-24E7FEF7C738}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA367991-9EA0-4FD1-BA80-24E7FEF7C738}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA367991-9EA0-4FD1-BA80-24E7FEF7C738}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA367991-9EA0-4FD1-BA80-24E7FEF7C738}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D26C914E-6B27-4A52-A377-C9FB9423A160}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D26C914E-6B27-4A52-A377-C9FB9423A160}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D26C914E-6B27-4A52-A377-C9FB9423A160}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D26C914E-6B27-4A52-A377-C9FB9423A160}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23623715-BDEE-4B57-A110-522D07E1A150}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23623715-BDEE-4B57-A110-522D07E1A150}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23623715-BDEE-4B57-A110-522D07E1A150}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23623715-BDEE-4B57-A110-522D07E1A150}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24B320E3-A062-4CDD-A58C-0A3362BFB023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24B320E3-A062-4CDD-A58C-0A3362BFB023}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24B320E3-A062-4CDD-A58C-0A3362BFB023}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24B320E3-A062-4CDD-A58C-0A3362BFB023}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D26C914E-6B27-4A52-A377-C9FB9423A160} = {4AA00218-E889-4BB1-9565-98E71093B08C}
+		{23623715-BDEE-4B57-A110-522D07E1A150} = {4AA00218-E889-4BB1-9565-98E71093B08C}
+		{24B320E3-A062-4CDD-A58C-0A3362BFB023} = {4AA00218-E889-4BB1-9565-98E71093B08C}
+		{BA367991-9EA0-4FD1-BA80-24E7FEF7C738} = {2B3EA688-8E8B-4E26-8134-ECB171D02624}
 	EndGlobalSection
 EndGlobal
